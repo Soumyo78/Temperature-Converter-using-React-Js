@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ConverterCard from './Components/Temperature Card/script';
+import arrowIcon from './Resources/double-arrow.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <h1 id="title-text">Temperature Converter</h1>
+      <div className="content-container">
+        <ConverterCard titleId="title-celsius" titleText="Celsius" inputBoxId="celsius-input"/>
+        <div className="arrow-img-container">
+          <img src={arrowIcon} alt="" width="150px"/>
+        </div>
+        <ConverterCard titleId="title-fahrenheit" titleText="Fahrenheit" inputBoxId="fahrenheit-input"/>
+      </div>
     </div>
   );
 }

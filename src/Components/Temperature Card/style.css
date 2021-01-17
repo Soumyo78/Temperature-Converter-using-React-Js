@@ -1,0 +1,19 @@
+.main-card-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: black;
+    padding: 50px;
+    place-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.input-box{
+    text-align: center;
+    font-size: 30px;
+}
